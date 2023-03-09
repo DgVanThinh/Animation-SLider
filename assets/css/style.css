@@ -1,0 +1,155 @@
+/* ======================SLIDE======================= */
+#slider{
+    position: relative;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.slider-item {
+    display: flex;
+    user-select: none;
+}
+.slider-wapper {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.slider-main {
+    display: flex;
+    position: relative;
+    height: 100%;
+    transition: transform 0.25s linear;
+}
+
+.slider-next , .slider-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #646363;
+    border-radius: 50%; 
+    font-size: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+.slider-prev {
+    left: -20px;
+}
+.slider-next {
+    right: -20px;
+}
+.slider-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.slider-dot li {
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(128, 128, 128);
+    cursor: pointer;
+    transition: background-color 0.25s linear;
+}
+.slider-dot li.active {
+    background-color: #fff;
+}
+.slider-dot-item {
+    background-color: rgb(128, 128, 128);
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 50px;
+}
+.slider-item {
+    height: 100%;
+    width: 100%;
+    flex: 1 0 100%;
+}
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+/*================SAN PHAM HOT====================*/
+#hot-product {
+    position: relative;
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding-top: 200px;
+}
+.hot-product-wapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px ;
+    padding: 20px 0px;
+    scroll-behavior: smooth;
+}
+.hot-product-main {
+    display: flex;
+    position: relative;
+    height: 100%;
+    transition: transform 0.25s linear;
+}
+.hot-product-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1 0 33.333%;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px ;
+    margin-right: 10px;
+}
+
+.hot-product-item:hover img{
+    scale: 0.85;
+    transition: transform 0.25s linear;
+}
+
+.img-hot-product {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+img {
+    display: block;
+    width: 100%;
+    transition: transform 0.25s linear;
+
+}
+.prize-hot-product {
+    color: red;
+    padding-bottom: 10px;
+}
+.name-hot-product {
+    text-align: center;
+}
+.prize-hot-product {
+    text-align: center;
+}
+
+
